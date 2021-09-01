@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>DeliX - Fast, Cheap, Innovative</title>
+    <style>
+      body{
+        font-family: Montserrat;
+      }
+    </style>
+</head>
+
+<body>
+
+        <!-------------------
+             Header Start 
+        --------------------->
+
+
+        <header id="header">
+
+
+
+            <!-------------------- 
+                 Navigation Start
+            ---------------------->
+
+
+
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark color-primary-bg" style="background-color: white; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <a class="navbar-brand font-montserrat " href="#" style="color: #000;  font-size: 1.7rem; margin-left: 5%;"><i style="padding: 7px; font-size: 1.4rem; color: rgb(63, 63, 63);" class="fas fa-truck"></i>DeliX</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav m-auto font-montserrat" >
+                    <li class="nav-item">
+                      <a class="nav-link font-poppins" href="index.html" style="color: #000; font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#aboutsec" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#servicesec" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productmenufinal.html" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#teamsec" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Team</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contactsec" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Contact Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="reviewredirect.html" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Review</a>
+                      </li>
+                  </ul>
+
+
+
+                  <div class="font-size-14; cursor: pointer;">
+                      <span class="font-size-16 px-2 text-black my-cart-icon"><i class="fas fa-shopping-cart"></i> 
+                    </span>
+                </div>             
+            </div>
+            </nav>
+
+
+
+
+               <!----------------------- 
+                   Navigation End
+                ------------------------->
+
+
+        </header>
+
+
+        <!----------------- 
+            Header End 
+        -------------------->
+
+
+
+
+
+
+        <!------------------
+             Banner Start 
+        -------------------->
+
+
+        
+        <section class="text-gray-600 body-font" style="margin-top: 100px; margin-bottom: 15vh;">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+              <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-montserrat text-gray-900" style="font-size: 5.8rem; font-weight: 600; font-family: Montserrat;">DeliX
+                </h1>
+                <p class="mb-10 mt-2 leading-relaxed" style="font-family: Montserrat; font-size: 1.2rem;">Giving a new perspective to existing Delivery system by fully automating it.</p>
+                <div class="flex justify-center">
+                  <button onclick="location.href = 'assets/flyer.pdf';" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Flyer</button>
+                  <button onclick="location.href = 'assets/working.mkv';" class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Website Working Video</button>
+                </div>
+              </div>
+              <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" alt="hero" src="assets/herosvg.svg">
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+          <!------------------
+             Banner End 
+        -------------------->
+
+
+
+
+
+          <!----------------- 
+              About Start 
+            ------------------>
+
+
+
+
+          <section class="text-gray-600 body-font" id="aboutsec">
+            <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+              
+              <div class="text-center lg:w-2/3 w-full">
+                <div class="he">
+                    <h2 class="titleabout" style="text-align: center;">ABOUT DeliX</h2>
+                </div>
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 mt-4 mb-4" style="font-family: Montserrat; font-weight: 600; font-size: 3rem;">Cultivating Ideas for Better Shipping</h1>
+                <p class="mb-8 leading-relaxed" style="font-family: Montserrat;"><b>DeliX</b> is a startUp based in Delhi founded by <b>Sahil Jain</b> and <b>Durvish Khanna</b>. Our vision is to revolutionize the system of delivery systems in India and all over world, and make it efficient, user-friendly and fully tech-driven with the help cutting-edge engineering and technology capabilities.</p>
+                <div class="flex justify-center">
+                  <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Flyer</button>
+                  <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Website Working Video</button>
+                  
+                </div>
+                
+              </div>
+              <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 mt-5 object-cover object-center rounded" alt="hero" src="assets/aboutsvg.svg">
+            </div>
+          </section>
+
+
+
+
+          <!----------------- 
+              About End 
+            ------------------>
+
+
+
+            <!--------------------
+                Explainer Video Start
+             --------------------->
+
+
+
+
+             <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
+                    <div class="he">
+                        <h2 class="titleserviceex" style="text-align: center;">EXPLAINER VIDEO</h2>
+                        </div>
+                          <h2 class="" style="color: rgb(44, 43, 46); font-size: 3.5rem; margin-bottom: 50px; font-family: Montserrat; text-align: center; font-weight: 600;">Our Business Model</h2>
+                  <iframe width="100%" height="650px" class="center"  alt="hero" src="https://www.youtube.com/embed/"></iframe>
+                  <div class="flex flex-col text-center w-full">
+                    
+        
+                  </div>
+                </div>
+              </section>
+
+
+
+
+             <!--------------------
+                Explainer Video End
+             --------------------->
+
+
+
+
+            <!------------------ 
+                Services Start 
+            ------------------->
+
+              
+
+
+
+            <section class="text-gray-600 body-font" id="servicesec" style="font-family: Montserrat;">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="flex flex-col text-center w-full mb-20">
+                    <div class="he">
+                        <h2 class="titleabout" style="text-align: center;">YOUR ONE STOP SOLUTION</h2>
+                        </div>
+                          <h2 class="" style="color: rgb(44, 43, 46); font-size: 3.5rem; margin-bottom: 10px; font-family: Montserrat; text-align: center; font-weight: 600;">Our Features</h2>
+                  </div>
+                  <div class="flex flex-wrap -m-4">
+
+
+                    <div class="p-4 md:w-1/3">
+                      <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                          <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                            <p>1</p>
+                          </div>
+                          <h2 class="text-gray-900 text-lg title-font font-medium">Fastest Possible Delivery</h2>
+                        </div>
+                        <div class="flex-grow">
+                          <p class="leading-relaxed text-base">We ensure domestic orders be delivered within at max 15-18 hours and the foreign orders be delivered within 24 hours through overnight shipping.</p>
+                          <a href="#" class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                              <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="p-4 md:w-1/3">
+                        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                          <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                              <p>2</p>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Foreign Orders and Warehouses</h2>
+                          </div>
+                          <div class="flex-grow">
+                            <p class="leading-relaxed text-base">We provide overnight shipping for international deliveries at lowest possible cost to USA, UK and Australia for now, where we also have our warehouses situated.</p>
+                            <a href="#" class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="p-4 md:w-1/3">
+                        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                          <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                              <p>3</p>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Providing Mass Employment</h2>
+                          </div>
+                          <div class="flex-grow">
+                            <p class="leading-relaxed text-base">We are providing mass employment at best salary to economically weaker section and poor even if they don't have any vehicles as we provide them with Yulu Bikes. And also provide them rewards for completing certain tasks.</p>
+                            <a href="#" class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="p-4 md:w-1/3">
+                        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                          <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                              <p>4</p>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Environment Friendly Delivery</h2>
+                          </div>
+                          <div class="flex-grow">
+                            <p class="leading-relaxed text-base">We encourage the verified industries tied up with us to reduce use of plastic and it's related products in packaging. We have also collaborated with Yulu Bikes to provide us economical E-bikes with delivery boxes, which helps reduce pollution and cost-effective too.</p>
+                            <a href="#" class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="p-4 md:w-1/3">
+                        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                          <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                              <p>5</p>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Making Happy Customers</h2>
+                          </div>
+                          <div class="flex-grow">
+                            <p class="leading-relaxed text-base">We provide 10-15% discount on the first delivery through our website. On purchasing products worth more than 40,000, we gift them some exciting gifts and free delivery charges for their next 2 products.</p>
+                            <a href="#" class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="p-4 md:w-1/3">
+                        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                          <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                              <p>6</p>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Full Order Tracking</h2>
+                          </div>
+                          <div class="flex-grow">
+                            <p class="leading-relaxed text-base">Our customers are provided with real-time tracking feature to know the current location of their product along with time required for the product to be delivered and automated message in case of delays.</p>
+                            <a href="#" class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="p-4 md:w-1/3">
+                        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                          <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                              <p>7</p>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Free Gifts and Passes</h2>
+                          </div>
+                          <div class="flex-grow">
+                            <p class="leading-relaxed text-base">The customers who have already bought products worth more than 1,00,000 , we provide them free gifts and passes to several events and also 2 month free Yulu ride.</p>
+                            <a href="#" class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="p-4 md:w-1/3">
+                        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                          <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                              <p>8</p>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Chatbot Functionality</h2>
+                          </div>
+                          <div class="flex-grow">
+                            <p class="leading-relaxed text-base">As we aim to fully automate delivery systems, we have a chatbot functionality on our website to help user find the best products according to his/her needs.</p>
+                            <a href="#" class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="p-4 md:w-1/3">
+                        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                          <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                              <p>9</p>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Variety of Products offered</h2>
+                          </div>
+                          <div class="flex-grow">
+                            <p class="leading-relaxed text-base">We have till now tied up with 1000+ industries all over India from different pin codes to provide you the fastest delivery. There are more than 2,000 products listed on our website. So what are you waiting for.</p>
+                            <a href="#" class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+
+                  </div>
+                </div>
+              </section>
+            
+              
+
+
+
+
+              <!------------------ 
+                Services End 
+            ------------------->
+
+
+
+
+
+            <!------------------ 
+                Products Start 
+            ------------------->
+
+
+
+
+            <div class="bg-white">
+                <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+                <div class="he">
+                <h2 class="titleservice" style="text-align: center;">Products</h2>
+                </div>
+                  <h2 class="" style="color: rgb(44, 43, 46); font-size: 3.5rem; margin-bottom: 50px; font-family: Montserrat; text-align: center; font-weight: 600;">Some Products</h2>
+              
+                  <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8" style="font-family: Montserrat;">
+    
+                    <div class="group">
+                        <a href="product1.html">
+                        <div class="w-full aspect-w-1 aspect-h-1  rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8" style="height: 200px;">
+                            <img src="assets/product1.png" style="width: 400px;"   class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-m text-gray-700">
+                            Canon PowerShot Camera
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                            ₹22,000 
+                        </p>  
+                        </a>
+                        <button onclick="window.location.href = 'productmenufinal.html'" class="btn btn-outline-dark font-size-12 mt-3 my-cart-btn">Add to Cart</button>
+                        <!-- <button onclick="window.location.href = 'cart.html'" type="submit" class="btn btn-outline-dark font-size-12 mt-3">Add to Cart</button> -->
+                    </div>
+    
+    
+                    <div class="group">
+                        <a href="product2.html">
+                        <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8" >
+                            <img src="assets/product2.jpg"   class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-m text-gray-700">
+                            Go Pro Camera
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                            ₹34,000 
+                        </p>  
+                        </a>
+                        <button onclick="window.location.href = 'productmenufinal.html'" class="btn btn-outline-dark font-size-12 mt-3 my-cart-btn">Add to Cart</button>
+                    </div>
+              
+    
+                    <div class="group">
+                        <a href="product3.html">
+                        <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8" style="height: 200px;">
+                            <img src="assets/product3plus.jpg"   class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-m text-gray-700">
+                            IdeaPad Slim 5
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                            ₹58,000
+                        </p>  
+                        </a>
+                        <button onclick="window.location.href = 'productmenufinal.html'" class="btn btn-outline-dark font-size-12 mt-3 my-cart-btn">Add to Cart</button>
+                    </div>
+    
+              
+                    <div class="group">
+                        <a href="product4.html">
+                        <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8" style="height: 200px;">
+                            <img src="assets/product4.jpg"   class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-m text-gray-700">
+                            Dell Inspiron 13
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                            ₹80,000
+                        </p>  
+                        </a>
+                        <button onclick="window.location.href = 'productmenufinal.html'" class="btn btn-outline-dark font-size-12 mt-3 my-cart-btn">Add to Cart</button>
+                    </div>
+    
+    
+                    <div class="group">
+                        <a href="product5.html">
+                        <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8" style="height: 200px;">
+                            <img src="assets/product5.jpg"   class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-m text-gray-700">
+                            Cannon Pixma
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                            ₹2,800
+                        </p>  
+                        </a>
+                        <button onclick="window.location.href = 'productmenufinal.html'" class="btn btn-outline-dark font-size-12 mt-3 my-cart-btn">Add to Cart</button>
+                    </div>
+    
+    
+                    <div class="group">
+                        <a href="product6.html">
+                        <div class="w-full aspect-w-1 aspect-h-1  rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8" style="height: 200px;">
+                            <img src="assets/product6.jpg"   style="height: 200px;"  class="w-full h-full object-center group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-m text-gray-700">
+                            Boat Airdopes 201
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                            ₹1,700
+                        </p>  
+                        </a>
+                        <button onclick="window.location.href = 'productmenufinal.html'" class="btn btn-outline-dark font-size-12 mt-3 my-cart-btn">Add to Cart</button>
+                    </div>
+    
+    
+                    <div class="group">
+                        <a href="product7.html">
+                        <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8" style="height: 200px;">
+                            <img src="assets/product7.jpg"   class="w-full h-full object-center group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-m text-gray-700">
+                            Galaxy S21+ 5G
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                            ₹70,000
+                        </p>  
+                        </a>
+                        <button onclick="window.location.href = 'productmenufinal.html'" class="btn btn-outline-dark font-size-12 mt-3 my-cart-btn">Add to Cart</button>
+                    </div>
+    
+    
+                    <div class="group">
+                        <a href="product8.html">
+                        <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8" style="height: 200px;">
+                            <img src="assets/product8.jpg"   class="w-full h-full object-center group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-m text-gray-700">
+                            Redmi-9 64GB
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                            ₹9,000
+                        </p>  
+                        </a>
+                        <button onclick="window.location.href = 'productmenufinal.html'" class="btn btn-outline-dark font-size-12 mt-3 my-cart-btn">Add to Cart</button>
+                    </div>
+              
+                
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!------------------ 
+                Products End 
+            ------------------->
+            
+
+
+
+
+            <!------------------ 
+                More Products Start 
+            ------------------->
+
+
+
+
+
+
+            <div class="bg-white">
+                <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+                <div class="he">
+                <h2 class="titleservice" style="text-align: center;">RECOMMENDED</h2>
+                </div>
+                  <h2 class="" style="color: rgb(44, 43, 46); font-size: 3.5rem; margin-bottom: 50px; font-family: Montserrat; text-align: center; font-weight: 600;">You may also like..</h2>
+              
+                  <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8" style="font-family: Montserrat;">
+    
+                    <div class="group">
+                        <a href="product1.html">
+                        <div class="w-full aspect-w-1 aspect-h-1  rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8" style="height: 200px;">
+                            <img src="assets/product1.png" style="width: 400px;"   class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-m text-gray-700">
+                            Canon PowerShot Camera
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                            ₹22,000 
+                        </p>  
+                        </a>
+                        <button onclick="window.location.href = 'productmenufinal.html'" class="btn btn-outline-dark font-size-12 mt-3 my-cart-btn">Add to Cart</button>
+                        <!-- <button onclick="window.location.href = 'cart.html'" type="submit" class="btn btn-outline-dark font-size-12 mt-3">Add to Cart</button> -->
+                    </div>
+    
+    
+                    <div class="group">
+                        <a href="product2.html">
+                        <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8" >
+                            <img src="assets/product2.jpg"   class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-m text-gray-700">
+                            Go Pro Camera
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                            ₹34,000 
+                        </p>  
+                        </a>
+                        <button onclick="window.location.href = 'productmenufinal.html'" class="btn btn-outline-dark font-size-12 mt-3 my-cart-btn">Add to Cart</button>
+                    </div>
+              
+    
+                    <div class="group">
+                        <a href="product3.html">
+                        <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8" style="height: 200px;">
+                            <img src="assets/product3plus.jpg"   class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-m text-gray-700">
+                            IdeaPad Slim 5
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                            ₹58,000
+                        </p>  
+                        </a>
+                        <button onclick="window.location.href = 'productmenufinal.html'" class="btn btn-outline-dark font-size-12 mt-3 my-cart-btn">Add to Cart</button>
+                    </div>
+    
+              
+                    <div class="group">
+                        <a href="product4.html">
+                        <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8" style="height: 200px;">
+                            <img src="assets/product4.jpg"   class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-m text-gray-700">
+                            Dell Inspiron 13
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                            ₹80,000
+                        </p>  
+                        </a>
+                        <button onclick="window.location.href = 'productmenufinal.html'" class="btn btn-outline-dark font-size-12 mt-3 my-cart-btn">Add to Cart</button>
+                    </div>
+    
+    
+                    <div class="group">
+                        <a href="product5.html">
+                        <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8" style="height: 200px;">
+                            <img src="assets/product5.jpg"   class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-m text-gray-700">
+                            Cannon Pixma
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                            ₹2,800
+                        </p>  
+                        </a>
+                        <button onclick="window.location.href = 'productmenufinal.html'" class="btn btn-outline-dark font-size-12 mt-3 my-cart-btn">Add to Cart</button>
+                    </div>
+    
+    
+                    <div class="group">
+                        <a href="product6.html">
+                        <div class="w-full aspect-w-1 aspect-h-1  rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8" style="height: 200px;">
+                            <img src="assets/product6.jpg"   style="height: 200px;"  class="w-full h-full object-center group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-m text-gray-700">
+                            Boat Airdopes 201
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                            ₹1,700
+                        </p>  
+                        </a>
+                        <button onclick="window.location.href = 'productmenufinal.html'" class="btn btn-outline-dark font-size-12 mt-3 my-cart-btn">Add to Cart</button>
+                    </div>
+    
+    
+                    <div class="group">
+                        <a href="product7.html">
+                        <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8" style="height: 200px;">
+                            <img src="assets/product7.jpg"   class="w-full h-full object-center group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-m text-gray-700">
+                            Galaxy S21+ 5G
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                            ₹70,000
+                        </p>  
+                        </a>
+                        <button onclick="window.location.href = 'productmenufinal.html'" class="btn btn-outline-dark font-size-12 mt-3 my-cart-btn">Add to Cart</button>
+                    </div>
+    
+    
+                    <div class="group">
+                        <a href="product8.html">
+                        <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8" style="height: 200px;">
+                            <img src="assets/product8.jpg"   class="w-full h-full object-center group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-m text-gray-700">
+                            Redmi-9 64GB
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                            ₹9,000
+                        </p>  
+                        </a>
+                        <button onclick="window.location.href = 'productmenufinal.html'" class="btn btn-outline-dark font-size-12 mt-3 my-cart-btn">Add to Cart</button>
+                    </div>
+              
+                
+                  </div>
+                </div>
+              </div>
+
+
+
+
+          <!------------------ 
+            More Products End 
+            ------------------->
+
+
+
+
+        <!-----------------
+             Banner End 
+        ------------------->
+
+          <br>
+          <br>
+
+          <!------------ 
+            FAQ Start 
+          --------------->
+          <div class="container">
+ 
+            <div class="flex flex-col text-center w-full mb-1">
+              <div class="he">
+                  <h2 class="titleabout" style="text-align: center;">FAQ</h2>
+              </div>
+                    <h2 class="" style="color: rgb(44, 43, 46); font-size: 3.5rem; font-family: Montserrat; text-align: center; font-weight: 600;">Frequently Asked Questions</h2>    
+            </div>
+            <br>
+            <br>
+            <br>  
+           
+            <div class="accordion">
+              <div class="accordion-item">
+                <a>What is DeliX's Vision?</a>
+                <div class="content">
+                  <p>Our vision is to revolutionize the working of delivery systems in India and all over the world, and make it efficient, user-friendly and fully tech-driven with the help of cutting-edge engineering and technology capabilities.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <a>What are some of the features of this E-Commerce Website?</a>
+                <div class="content">
+                  <p>1. Full Product Details <br>
+                    2. Credit Card Payment Option<br>
+                    3. Add to Cart Functionality<br>
+                    4. Chatbot Functionality<br>
+                    5. Order Tracking Functionality<br>
+                    </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <a>How are model is Eco-Friendly One?</a>
+                <div class="content">
+                  <p>We encourage the verified industries tied up with us to reduce use of plastic and it's related products in packaging. We have also collaborated with Yulu Bikes to provide us economical E-bikes with delivery boxes, which helps reduce pollution and is cost-effective too.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <a>How does our overnight shipping service works?</a>
+                <div class="content">
+                  <p>We provide overnight shipping for international deliveries at lowest possible cost to USA, UK and Australia for now, where we also have our warehouses situated.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <a>How to place your order?</a>
+                <div class="content">
+                  <p>We have made an E-commerce website with features like Cart functionality, Tracking orders, Chatbot functionality etc. So the user comes to our website https://thedelix.netlify.app/ and orders the products as per his/her needs.                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <!------------ 
+            FAQ End 
+          --------------->
+           
+          
+
+        <!------------------ 
+            Our Team Start 
+        ------------------->
+
+
+
+        <section class="text-gray-600 body-font" id="teamsec">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-col text-center w-full mb-20">
+                <div class="he">
+                    <h2 class="titleabout" style="text-align: center;">DeliX</h2>
+                    </div>
+                      <h2 class="" style="color: rgb(44, 43, 46); font-size: 3.5rem; margin-bottom: 50px; font-family: Montserrat; text-align: center; font-weight: 600;">Our Team</h2>    
+            </div>
+              <div class="flex flex-wrap -m-4"">
+
+                <div class="p-4 lg:w-1/4 md:w-1/2" style="margin-left: 25%;">
+                    <div class="h-full flex flex-col items-center text-center">
+                      <img alt="team" class="flex-shrink-0 rounded-lg w-100 h-150  mb-4" src="assets/durvish.jpg">
+                      <div class="w-full">
+                        <h2 class="title-font font-medium text-lg text-gray-900">Durvish Khanna</h2>
+                        <h3 class="text-gray-500 mb-3">Graphic & Video Designing</h3>
+                      </div>
+                    </div>
+                  </div>
+
+
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                  <div class="h-full flex flex-col items-center text-center">
+                    <img alt="team" class="flex-shrink-0 rounded-lg w-60 h-80  mb-4" src="assets/sahil3.jpg">
+                    <div class="w-full">
+                      <h2 class="title-font font-medium text-lg text-gray-900">Sahil Jain</h2>
+                      <h3 class="text-gray-500 mb-3">Web Developer</h3>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </section>
+          
+
+
+
+
+          <!------------------ 
+            Our Team End 
+        ------------------->
+
+
+
+
+        <!------------------ 
+            Contact Start 
+        ------------------->
+
+
+          <section class="text-gray-600 body-font relative" id="contactsec" style="font-family:Montserrat ;">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-col text-center w-full mb-1">
+                <div class="he">
+                    <h2 class="titleabout" style="text-align: center;">GET IN CONTACT WITH US</h2>
+                    </div>
+                      <h2 class="" style="color: rgb(44, 43, 46); font-size: 3.5rem; font-family: Montserrat; text-align: center; font-weight: 600;">Contact Us</h2>    
+            </div>
+              </div>
+              <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <div class="flex flex-wrap -m-2">
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                      <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                      <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <div class="p-2 w-full">
+                    <div class="relative">
+                      <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                      <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    </div>
+                  </div>
+                  <div class="p-2 w-full">
+                    <button class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Submit</button>
+                  </div>
+                  <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                    <a class="text-blue-500">deliX@demo.com</a>
+                    <p class="leading-normal my-5">Montfort School
+                      <br>Ashok Vihar
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+          <!------------------ 
+            Contact End 
+        ------------------->
+            
+
+
+
+         <!------------------ 
+            Chatbot Button Start 
+        ------------------->
+
+
+          <button onclick="window.location.href = 'chatbot/index.html';" id="myBtn" title="Go to top" style="font-family: Montserrat;">Chatbot</button>
+          
+          <script>
+            var mybutton = document.getElementById("myBtn");
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+          </script>
+
+
+          <!------------------ 
+            Chatbot Button End 
+        ------------------->
+
+
+
+
+        <!------------------ 
+           JS Libraries Start 
+        ------------------->
+
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script src="function.js"></script> 
+    
+        <!------------------ 
+           JS Libraries End 
+        ------------------->
+
+
+</body>
+</html>

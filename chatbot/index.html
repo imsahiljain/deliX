@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <title>DeliX - Fast, Cheap, Innovative</title>
+    <style>
+        html,body 
+{
+    padding:0;
+    margin:0;
+    max-width:70%;
+    margin-left: 14%;
+    user-select:none;
+    -ms-user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+   background-color: #fff;
+   
+   
+}
+        #h{
+  Color: black;
+  Border-radius:5px;
+  margin-left: 70px;
+  font-family: 'Montserrat';
+  font-size: 50px;
+  margin-top: 100px;
+  font-weight: 600;
+  
+  
+  }
+
+.font
+{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+header
+{
+      text-align:center;
+}
+
+main
+{
+    padding:10px;
+    margin-bottom:65px;
+}
+
+footer #command
+{
+    position:fixed;
+    bottom:0;
+    width:48%;
+    padding:17px 17px;
+    padding-right:7px;
+    margin-left: .5%;
+    margin-bottom:20px;
+    border-radius:10px;
+    border:0.5px solid #9e9e9e50;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box ;
+    background-color:#fff;
+
+    
+}
+
+#command input
+{
+    display:block;
+    width:73%;
+    float:left;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight:500;
+
+    
+}
+
+#command input,#command button
+{
+    
+    padding:10px 15px;
+    border:0;
+    outline:0;
+}
+
+
+button
+{
+    background-color:#313131;
+    color:#fff;
+    border-radius:10px;
+    font-weight:300;
+    float:right;
+    
+    
+ }
+ 
+ .row
+ {
+     width:100%;
+     margin-bottom:10px;
+     display:block;
+ }
+ .row::after{
+      content: "";
+    display: table;
+    clear: both;
+ }
+ 
+.chat
+{
+    border:0;
+    word-wrap:break-word;
+    background-color:#e2fdea;
+    border-radius:10px;
+    color:#111;
+    padding:10px 20px;
+    display:inline-block  
+}
+
+.question
+{
+    float:right;
+    background-color:#28b74e;
+    color:#fff;
+}
+
+.answer
+{
+    float:left;
+}
+
+
+    </style>
+</head>
+<body>
+
+        <!-------------------
+             Header Start 
+        --------------------->
+
+        <header1 id="header">
+            <!-------------------- 
+                Primary Navigation
+            ---------------------->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark color-primary-bg" style="background-color: white; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <a class="navbar-brand font-montserrat " href="#" style="color: #000;  font-size: 1.7rem; margin-left: 5%;"><i style="padding: 7px; font-size: 1.4rem; color: rgb(63, 63, 63);" class="fas fa-truck"></i>DeliX</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav m-auto font-montserrat" >
+                    <li class="nav-item">
+                      <a class="nav-link font-poppins" href="../index.html" style="color: #000; font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html#aboutsec" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html#servicesec" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../productmenufinal.html" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html#teamsec" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Team</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contactsec" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Contact Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="reviewredirect.html" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Review</a>
+                      </li>
+                  </ul>
+
+
+
+                  <div class="font-size-14; cursor: pointer;">
+                      <span class="font-size-16 px-2 text-black my-cart-icon"><i class="fas fa-shopping-cart"></i> 
+                    </span>
+                </div>             
+            </div>
+            </nav>
+              </header1>
+
+              <header1 style="margin-top: 200px;">
+                <h1 class="font" id="h" >Chatbot 🤖 || Here to help you</h1>
+            </header1>
+            
+            <main class="font">
+               
+            </main>
+            
+            <div id="last"></div>
+            
+            <footer>
+                <div id="command">
+                    <input placeholder="Ask Your Question Here" type="text"/>
+                    <button class="shadow font">Send</button>
+                </div>
+            </footer>
+
+            <script src="main.js"></script>
+              </body>
+              </html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="pro.css">
+        <style>
+            #map{
+                height: 400px;
+                width: 60%;
+            }
+            .overlay {
+position: absolute;
+top: 10px;
+left: 10px;
+}
+ 
+.overlay button {
+font: 600 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+background-color: #3386c0;
+color: #fff;
+display: inline-block;
+margin: 0;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+border-radius: 3px;
+}
+ 
+.overlay button:hover {
+background-color: #4ea0da;
+}
+        </style>
+    <title>DeliX - Fast, Cheap, Innovative</title>
+</head>
+<body>
+
+        <!-------------------
+             Header Start 
+        --------------------->
+
+        <header id="header">
+            <!-------------------- 
+                Primary Navigation
+            ---------------------->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark color-primary-bg" style="background-color: white; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <a class="navbar-brand font-montserrat " href="#" style="color: #000;  font-size: 1.7rem; margin-left: 5%;"><i style="padding: 7px; font-size: 1.4rem; color: rgb(63, 63, 63);" class="fas fa-truck"></i>DeliX</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav m-auto font-montserrat" >
+                    <li class="nav-item">
+                      <a class="nav-link font-poppins" href="index.html" style="color: #000; font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#aboutsec" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#servicesec" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productmenufinal.html" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html#teamsec" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Team</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html#contactsec" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Contact Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="reviewredirect.html" style="color: #000;font-size: 1.2rem; font-family: Montserrat; padding-right: 20px;">Review</a>
+                      </li>
+                  </ul>
+  
+                  <div class="font-size-14; cursor: pointer;">
+                      <span class="font-size-16 px-2 text-black my-cart-icon"><i class="fas fa-shopping-cart"></i> 
+                    </span>
+                </div>             
+            </div>
+            </nav>
+               <!----------------------- 
+                   !Primary Navigation 
+                ------------------------->
+
+        </header>
+        <!----------------- 
+            Header End 
+        -------------------->
+
+        <section class="text-gray-600 body-font relative" style="margin-top: 150px; margin-bottom: 100px;">
+            <div class="container px-5 py-24 mx-auto">
+                
+              <div class="flex flex-col text-center w-full mb-12">
+                <div class="he">
+                    <h2 class="review" style="text-align: center;">TRACK YOUR PRODUCT EVERY SECOND</h2>
+                    </div>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" style="font-family: Montserrat;font-weight:700; font-size: 2.5rem;">Your Tracking ID</h1>
+                <p class="lg:w-2/3 mx-auto" style="font-weight: 500; font-size: 2rem; color: black; background-color: rgb(224, 224, 224); width: 190px; border-radius: 9px; margin-top: 30px;">987654321</p>
+            </div>
+              </div>
+              </section>
+
+
+              <section class="text-gray-600 body-font" style="margin-left: 100px;">
+                <div class="container px-5 py-24 mx-auto flex flex-wrap">
+                  <div class="flex flex-wrap w-full">
+                    <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+                      <div class="flex relative pb-12">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            
+                          </svg>
+                        </div>
+                        <div class="flex-grow pl-4">
+                          <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Order Placed</h2>
+                        </div>
+                      </div>
+
+
+                      <div class="flex relative pb-12">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            
+                          </svg>
+                        </div>
+                        <div class="flex-grow pl-4">
+                          <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Order Packaging</h2>
+                        </div>
+                      </div>
+
+
+
+                      <div class="flex relative pb-12">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">      
+                          </svg>
+                        </div>
+                        <div class="flex-grow pl-4">
+                          <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Order Picked Up</h2>
+                        </div>
+                      </div>
+
+
+
+
+
+                      <div class="flex relative pb-12">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          </svg>
+                        </div>
+                        <div class="flex-grow pl-4">
+                          <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Devlivery Done</h2>
+                        </div>
+                      </div>
+
+
+
+                      <div class="flex relative">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          </svg>
+                        </div>
+                        <div class="flex-grow pl-4">
+                          <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Your Review</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="map"></div>
+                    </div>
+                </div>
+              </section>
+          
+
+
+
+
+
+      
+         
+<!-- <script>
+	mapboxgl.accessToken = 'pk.eyJ1Ijoic2FoaWwwNiIsImEiOiJja3NlYXAzcGUweXZzMm9vZDF6a213a3YwIn0.2TqRpF9Ot8N3TcY5vKY0ag';
+const map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [77.1888, 28.6550],
+zoom: 11
+});
+ 
+// San Francisco
+const origin = [77.1888,28.7095];
+ 
+// Washington DC
+const destination = [77.2177,28.6304];
+ 
+// A simple line from origin to destination.
+const route = {
+'type': 'FeatureCollection',
+'features': [
+{
+'type': 'Feature',
+'geometry': {
+'type': 'LineString',
+'coordinates': [origin, destination]
+}
+}
+]
+};
+ 
+// A single point that animates along the route.
+// Coordinates are initially set to origin.
+const point = {
+'type': 'FeatureCollection',
+'features': [
+{
+'type': 'Feature',
+'properties': {},
+'geometry': {
+'type': 'Point',
+'coordinates': origin
+}
+}
+]
+};
+ 
+// Calculate the distance in kilometers between route start/end point.
+const lineDistance = turf.length(route.features[0]);
+ 
+const arc = [];
+ 
+// Number of steps to use in the arc and animation, more steps means
+// a smoother arc and animation, but too many steps will result in a
+// low frame rate
+const steps = 500;
+ 
+// Draw an arc between the `origin` & `destination` of the two points
+for (let i = 0; i < lineDistance; i += lineDistance / steps) {
+const segment = turf.along(route.features[0], i);
+arc.push(segment.geometry.coordinates);
+}
+ 
+// Update the route with calculated arc coordinates
+route.features[0].geometry.coordinates = arc;
+ 
+// Used to increment the value of the point measurement against the route.
+let counter = 0;
+ 
+map.on('load', () => {
+// Add a source and layer displaying a point which will be animated in a circle.
+map.addSource('route', {
+'type': 'geojson',
+'data': route
+});
+ 
+map.addSource('point', {
+'type': 'geojson',
+'data': point
+});
+ 
+map.addLayer({
+'id': 'route',
+'source': 'route',
+'type': 'line',
+'paint': {
+'line-width': 2,
+'line-color': '#007cbf'
+}
+});
+ 
+map.addLayer({
+'id': 'point',
+'source': 'point',
+'type': 'symbol',
+'layout': {
+// This icon is a part of the Mapbox Streets style.
+// To view all images available in a Mapbox style, open
+// the style in Mapbox Studio and click the "Images" tab.
+// To add a new image to the style at runtime see
+// https://docs.mapbox.com/mapbox-gl-js/example/add-image/
+'icon-image': 'airport-15',
+'icon-rotate': ['get', 'bearing'],
+'icon-rotation-alignment': 'map',
+'icon-allow-overlap': true,
+'icon-ignore-placement': true
+}
+});
+ 
+function animate() {
+const start =
+route.features[0].geometry.coordinates[
+counter >= steps ? counter - 1 : counter
+];
+const end =
+route.features[0].geometry.coordinates[
+counter >= steps ? counter : counter + 1
+];
+if (!start || !end) return;
+ 
+// Update point geometry to a new position based on counter denoting
+// the index to access the arc
+point.features[0].geometry.coordinates =
+route.features[0].geometry.coordinates[counter];
+ 
+// Calculate the bearing to ensure the icon is rotated to match the route arc
+// The bearing is calculated between the current point and the next point, except
+// at the end of the arc, which uses the previous point and the current point
+point.features[0].properties.bearing = turf.bearing(
+turf.point(start),
+turf.point(end)
+);
+ 
+// Update the source with this new data
+map.getSource('point').setData(point);
+ 
+// Request the next frame of animation as long as the end has not been reached
+if (counter < steps) {
+requestAnimationFrame(animate);
+}
+ 
+counter = counter + 1;
+}
+ 
+document.getElementById('replay').addEventListener('click', () => {
+// Set the coordinates of the original point back to origin
+point.features[0].geometry.coordinates = origin;
+ 
+// Update the source layer
+map.getSource('point').setData(point);
+ 
+// Reset the counter
+counter = 0;
+ 
+// Restart the animation
+animate(counter);
+});
+ 
+// Start the animation
+animate(counter);
+});
+</script> -->
+
+
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1Ijoic2FoaWwwNiIsImEiOiJja3NlYXAzcGUweXZzMm9vZDF6a213a3YwIn0.2TqRpF9Ot8N3TcY5vKY0ag';
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        center: [77.1888, 28.6550], // starting position
+        zoom: 9 // starting zoom
+    });
+
+    // Add geolocate control to the map.
+    map.addControl(
+        new mapboxgl.GeolocateControl({
+            positionOptions: {
+                enableHighAccuracy: true
+            },
+            // When active the map will receive updates to the device's location as it changes.
+            trackUserLocation: true,
+            // Draw an arrow next to the location dot to indicate which direction the device is heading.
+            showUserHeading: true
+        })
+    );
+
+    // Create a default Marker and add it to the map.
+const marker1 = new mapboxgl.Marker()
+.setLngLat([77.1888, 28.7095])
+.addTo(map);
+ 
+
+</script>
+</body>
+</html>
